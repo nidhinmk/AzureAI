@@ -24,8 +24,7 @@
 
    <img width="1017" height="587" alt="Screenshot 2025-10-19 at 1 00 06 PM" src="https://github.com/user-attachments/assets/bd36b3b4-da90-4278-9876-02be26fd02f1" />
 
-
-[Analyze Image] (#my-analyze-image)
+[Analyze Image](/AnalyzeImage.md)
 
 **Develop an image analysis app with the Azure AI Vision SDK**
 
