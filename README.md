@@ -8,38 +8,22 @@ Login to Microsoft Azure portal (https://portal.azure.com) and create a resource
 
 Search for Computer Vision
 
-<img width="1512" height="699" alt="Screenshot 2025-10-19 at 8 51 09 AM" src="https://github.com/user-attachments/assets/40559ce5-c3ca-4b70-8c8c-43c82852fceb" />
+<img width="1915" height="718" alt="Screenshot 2025-10-19 at 12 55 07 PM" src="https://github.com/user-attachments/assets/bee31c4e-560e-4b55-a272-fcb052cf2f5a" />
 
 Select the subscription and Plan
 
-<img width="1510" height="454" alt="Screenshot 2025-10-19 at 8 52 10 AM" src="https://github.com/user-attachments/assets/a097e2d8-9897-442d-b6ce-1716730bc277" />
+<img width="788" height="364" alt="Screenshot 2025-10-19 at 12 56 15 PM" src="https://github.com/user-attachments/assets/6c83e537-8716-48db-a591-9f74b9b9c8a7" />
 
-Select the Region and Trier as below. 
+Select the Region and Trier as below, Review and Create. 
 
-<img width="1506" height="763" alt="Screenshot 2025-10-19 at 8 58 02 AM" src="https://github.com/user-attachments/assets/be059309-5bea-4069-953c-f6dcf72d432f" />
+<img width="788" height="706" alt="Screenshot 2025-10-19 at 12 57 24 PM" src="https://github.com/user-attachments/assets/ba66649d-449f-45a8-9d1f-c3a031acdad6" />
 
-Review and Create
+Under Resource Maangemnt page, select the Computer Vision resource just created and select Manage Keys -> Select Keys and Endpoints. 
 
-<img width="647" height="816" alt="Screenshot 2025-10-19 at 8 59 34 AM" src="https://github.com/user-attachments/assets/93847f3b-9bc2-4a85-ada9-e583d0be7a1f" />
-
-Deployment in progress
-
-<img width="1512" height="558" alt="Screenshot 2025-10-19 at 9 00 13 AM" src="https://github.com/user-attachments/assets/67291bf4-4051-4fcb-91dd-4bb51d86dbf9" />
-
-Deployment Complete
-
-<img width="1507" height="699" alt="Screenshot 2025-10-19 at 9 00 41 AM" src="https://github.com/user-attachments/assets/49446eaa-4307-40e4-8145-9b120bc1dba7" />
-
-Under Resource Maangemnt page, select the Computer Vision resource just created. 
-
-<img width="1512" height="656" alt="Screenshot 2025-10-19 at 9 06 08 AM" src="https://github.com/user-attachments/assets/a18500d7-a208-4e52-a071-a902e67bd983" />
-
-Select the Manage Keys and select Keys and Endpoints
-
-<img width="1100" height="583" alt="Screenshot 2025-10-19 at 9 08 22 AM" src="https://github.com/user-attachments/assets/9affed95-5d31-49e4-844a-050c46f0557d" />
+<img width="1017" height="587" alt="Screenshot 2025-10-19 at 1 00 06 PM" src="https://github.com/user-attachments/assets/bd36b3b4-da90-4278-9876-02be26fd02f1" />
 
 
-Develop an image analysis app with the Azure AI Vision SDK
+**Develop an image analysis app with the Azure AI Vision SDK**
 
 In this exercise, we’ll complete a partially implemented client application that uses the Azure AI Vision SDK to analyze images.
 
@@ -141,10 +125,13 @@ if result.dense_captions is not None:
 python image-analysis.py images/street.jpg
 ```
 
-8. 
+8. The output for the below street.jpg image should include a suggested caption:
 
+<img width="403" height="267" alt="Screenshot 2025-10-19 at 12 51 26 PM" src="https://github.com/user-attachments/assets/3204b2ac-d292-4f4b-974f-0dc8388d48a3" />
 
+9. Observe the below captions generated for the image and the confidence level.
 
+<img width="897" height="274" alt="Screenshot 2025-10-19 at 12 53 39 PM" src="https://github.com/user-attachments/assets/c2554c19-e4e4-4b47-afda-4eac0af665a2" />
 
 
 
