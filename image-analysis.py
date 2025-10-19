@@ -62,12 +62,32 @@ def main():
         
 
         # Get image tags
+        if result.tags is not None:
+            print("\nTags:")
+            for tag in result.tags.list:
+                print(" Tag: '{}' (confidence: {:.2f}%)".format(tag.name, tag.confidence * 100))
         
 
         # Get objects in the image
+        if result.objects is not None:
+            print("\nObjects in image:")
+            for detected_object in result.objects.list:
+                # Print object tag and confidence
+                print(" {} (confidence: {:.2f}%)".format(detected_object.tags[0].name, detected_object.tags[0].confidence * 100))
+            # Annotate objects in the image
+            show_objects(image_file, result.objects.list)
 
 
         # Get people in the image
+        if result.people is not None:
+            print("\nPeople in image:")
+
+            for detected_person in result.people.list:
+                if detected_person.confidence > 0.2:
+                    # Print location and confidence of each person detected
+                    print(" {} (confidence: {:.2f}%)".format(detected_person.bounding_box, detected_person.confidence * 100))
+            # Annotate people in the image
+            show_people(image_file, result.people.list)
   
             
         
