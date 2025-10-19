@@ -1,7 +1,5 @@
 # AzureAI
 
-<a name="my-analyze-image">Analyze Image</a>
-
 **Computer Vision**
 
 1. Login to Microsoft Azure portal (https://portal.azure.com) and create a resource. 
@@ -24,6 +22,6 @@
 
    <img width="1017" height="587" alt="Screenshot 2025-10-19 at 1 00 06 PM" src="https://github.com/user-attachments/assets/bd36b3b4-da90-4278-9876-02be26fd02f1" />
 
-[Analyze Image](/AnalyzeImage.md)
+[Analyze Image](/AnalyzeImage.md) - Use pre-trained models to analyze images and extract insights and information from them.
 
 
