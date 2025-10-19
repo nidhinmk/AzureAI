@@ -67,7 +67,7 @@ After you’ve replaced the placeholders, use the CTRL+S command to save your ch
 
 **Add code to suggest a caption**
 
-1. enter the following command to open the code file for the client application
+1. Enter the following command to open the code file for the client application
 ```
 code image-analysis.py
 ```
@@ -81,61 +81,118 @@ from azure.ai.vision.imageanalysis.models import VisualFeatures
 from azure.core.credentials import AzureKeyCredential
 ```
 
-3.  Under `Authenticate Azure AI Vision` client, add the following code to create and authenticate a Azure AI Vision client object.
-```
-# Authenticate Azure AI Vision client
-cv_client = ImageAnalysisClient(
-     endpoint=ai_endpoint,
-     credential=AzureKeyCredential(ai_key))
-
-```
+3. Under `Authenticate Azure AI Vision` client, add the following code to create and authenticate a Azure AI Vision client object.
+   ```
+   # Authenticate Azure AI Vision client
+   cv_client = ImageAnalysisClient(
+        endpoint=ai_endpoint,
+        credential=AzureKeyCredential(ai_key))
+   
+   ```
 
 5. Under `Analyze image`, add the following code:
-```
-with open(image_file, "rb") as f:
-     image_data = f.read()
-print(f'\nAnalyzing {image_file}\n')
-
-result = cv_client.analyze(
-     image_data=image_data,
-     visual_features=[
-         VisualFeatures.CAPTION,
-         VisualFeatures.DENSE_CAPTIONS,
-         VisualFeatures.TAGS,
-         VisualFeatures.OBJECTS,
-         VisualFeatures.PEOPLE],
-)
-```
+   ```
+   with open(image_file, "rb") as f:
+        image_data = f.read()
+   print(f'\nAnalyzing {image_file}\n')
+   
+   result = cv_client.analyze(
+        image_data=image_data,
+        visual_features=[
+            VisualFeatures.CAPTION,
+            VisualFeatures.DENSE_CAPTIONS,
+            VisualFeatures.TAGS,
+            VisualFeatures.OBJECTS,
+            VisualFeatures.PEOPLE],
+   )
+   ```
 
 6. Under `Get image captions`, add the following code to display image captions and dense captions
-```
-# Get image captions
-if result.caption is not None:
-     print("\nCaption:")
-     print(" Caption: '{}' (confidence: {:.2f}%)".format(result.caption.text, result.caption.confidence * 100))
-    
-if result.dense_captions is not None:
-     print("\nDense Captions:")
-     for caption in result.dense_captions.list:
-         print(" Caption: '{}' (confidence: {:.2f}%)".format(caption.text, caption.confidence * 100))
-```
+   ```
+   # Get image captions
+   if result.caption is not None:
+        print("\nCaption:")
+        print(" Caption: '{}' (confidence: {:.2f}%)".format(result.caption.text, result.caption.confidence * 100))
+       
+   if result.dense_captions is not None:
+        print("\nDense Captions:")
+        for caption in result.dense_captions.list:
+            print(" Caption: '{}' (confidence: {:.2f}%)".format(caption.text, caption.confidence * 100))
+   ```
 
 7. Save the file enter the following command to run the program with the argument images/street.jpg:
-```
-python image-analysis.py images/street.jpg
-```
+   ```
+   python image-analysis.py images/street.jpg
+   ```
 
 8. The output for the below street.jpg image should include a suggested caption:
 
-<img width="403" height="267" alt="Screenshot 2025-10-19 at 12 51 26 PM" src="https://github.com/user-attachments/assets/3204b2ac-d292-4f4b-974f-0dc8388d48a3" />
+   <img width="403" height="267" alt="Screenshot 2025-10-19 at 12 51 26 PM" src="https://github.com/user-attachments/assets/3204b2ac-d292-4f4b-974f-0dc8388d48a3" />
 
 9. Observe the below captions generated for the image and the confidence level.
 
-<img width="897" height="274" alt="Screenshot 2025-10-19 at 12 53 39 PM" src="https://github.com/user-attachments/assets/c2554c19-e4e4-4b47-afda-4eac0af665a2" />
+   <img width="897" height="274" alt="Screenshot 2025-10-19 at 12 53 39 PM" src="https://github.com/user-attachments/assets/c2554c19-e4e4-4b47-afda-4eac0af665a2" />
 
+**Add code to generate suggested tags**
 
+The below code identifies relevant tags that provide clues about the contents of an image.
 
+1. In the code editor, in the AnalyzeImage function, add the following code, for `Get Image`
+   ```
+   # Get image tags
+   if result.tags is not None:
+        print("\nTags:")
+        for tag in result.tags.list:
+            print(" Tag: '{}' (confidence: {:.2f}%)".format(tag.name, tag.confidence * 100))
+   ```
+2. Run the program with the argument images/street.jpg, observing that in addition to the image caption, a list of suggested tags is displayed.
+`
+   <img width="840" height="618" alt="Screenshot 2025-10-19 at 1 19 44 PM" src="https://github.com/user-attachments/assets/75b01770-f560-49fc-97d5-415087faa909" />
 
+**Add code to detect and locate objects**
 
+1. In the AnalyzeImage function, add the following code for `Get objects` to list the objects detected in the image, and call the provided function to annotate an image with the detected objects:
+
+   ```
+   # Get objects in the image
+   if result.objects is not None:
+        print("\nObjects in image:")
+        for detected_object in result.objects.list:
+            # Print object tag and confidence
+            print(" {} (confidence: {:.2f}%)".format(detected_object.tags[0].name, detected_object.tags[0].confidence * 100))
+        # Annotate objects in the image
+        show_objects(image_file, result.objects.list)
+   ```
+2. Run the program with the argument images/street.jpg, observing that in addition to the image caption and suggested tags; a file named objects.jpg is generated.
+3. Use the (Azure cloud shell-specific) download command to download the objects.jpg file:
+   ```
+   download objects.jpg
+   ```
+   
+   <img width="1908" height="921" alt="Screenshot 2025-10-19 at 1 26 39 PM" src="https://github.com/user-attachments/assets/966e1616-5ed4-4e51-8d91-cb2a0ad27388" />
+
+**Add code to detect and locate people**
+
+1. In the AnalyzeImage function, add the following code for `Get people` to list any detected people with a confidence level of 20% or more, and call a provided function to annotate them in an image:
+
+   ```
+   # Get people in the image
+   if result.people is not None:
+        print("\nPeople in image:")
+   
+        for detected_person in result.people.list:
+            if detected_person.confidence > 0.2:
+                # Print location and confidence of each person detected
+                print(" {} (confidence: {:.2f}%)".format(detected_person.bounding_box, detected_person.confidence * 100))
+        # Annotate people in the image
+        show_people(image_file, result.people.list)
+   ```
+   
+   <img width="1903" height="924" alt="Screenshot 2025-10-19 at 1 31 59 PM" src="https://github.com/user-attachments/assets/eea564db-9f7f-4594-88ab-ba49f2ad0a4a" />
+
+**Clean up resources**
+
+Make sure to delete the resources we have created in this exercise to avoid incurring unnecessary Azure costs. 
+   
 
 
