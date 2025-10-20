@@ -24,4 +24,6 @@
 
 [Analyze Image](/AnalyzeImage.md) - Use pre-trained models to analyze images and extract insights and information from them.
 
+[Read Text in Images](/TextExtractionApp.md) - A client application that uses the Azure AI Vision SDK to extract text from images.
+
 
