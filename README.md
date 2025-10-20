@@ -4,6 +4,10 @@
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
 
+   [Analyze Image](/AnalyzeImage.md) - Use pre-trained models to analyze images and extract insights and information from them.
+
+   [Read Text in Images](/TextExtractionApp.md) - A client application that uses the Azure AI Vision SDK to extract text from images.
+
    The following content demonstrates how to analyze images and read text from images using Azure AI capabilities.
 
 1. Login to Microsoft Azure portal (https://portal.azure.com) and create a resource. 
@@ -25,9 +29,5 @@
 5. Under Resource Maangemnt page, select the Computer Vision resource just created and select Manage Keys -> Select Keys and Endpoints. 
 
    <img width="1017" height="587" alt="Screenshot 2025-10-19 at 1 00 06 PM" src="https://github.com/user-attachments/assets/bd36b3b4-da90-4278-9876-02be26fd02f1" />
-
-[Analyze Image](/AnalyzeImage.md) - Use pre-trained models to analyze images and extract insights and information from them.
-
-[Read Text in Images](/TextExtractionApp.md) - A client application that uses the Azure AI Vision SDK to extract text from images.
 
 
