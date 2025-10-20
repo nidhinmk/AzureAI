@@ -2,6 +2,10 @@
 
 **Computer Vision**
 
+   Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
+
+   The following content demonstrates how to analyze images and read text from images using Azure AI capabilities.
+
 1. Login to Microsoft Azure portal (https://portal.azure.com) and create a resource. 
 
    <img width="1508" height="513" alt="Screenshot 2025-10-19 at 8 49 06 AM" src="https://github.com/user-attachments/assets/9cb19d34-f93a-4c51-8aca-9fa9cd1efeb5" />
