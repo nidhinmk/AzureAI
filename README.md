@@ -6,6 +6,8 @@
 
    [Chat with GPT Model](/ChatWithGPT.md) - Explores the generative AI application that assists in solving problems.
 
+   [Generative AI Chat App](/GenAIChatApp.md) - Creates an application that chats with a generative AI model.
+
 ## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
