@@ -1,6 +1,12 @@
 # AzureAI
 
-**Computer Vision**
+## Generative AI Apps
+
+   The Azure AI Foundry model catalog serves as a central repository where one can explore and use a variety of models, facilitating the creation of your generative AI scenario.
+
+   [Chat with GPT Model](/ChatWithGPT.md) - Explores the generative AI application that assists in solving problems.
+
+## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
 
