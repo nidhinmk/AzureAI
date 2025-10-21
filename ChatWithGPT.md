@@ -51,7 +51,13 @@
 
      <img width="1509" height="855" alt="Screenshot 2025-10-20 at 7 21 43 PM" src="https://github.com/user-attachments/assets/afdcc448-e102-4001-8032-93f46772799a" />
 
-  5. Clean up the resources by deleting the resource group. 
+  5. Clean up the resources by deleting the resource group.
+
+     <img width="1503" height="652" alt="Screenshot 2025-10-20 at 7 34 16 PM" src="https://github.com/user-attachments/assets/ee8e8dfa-afb3-4854-bf51-e55f2f1bb589" />
+
+     <img width="1506" height="603" alt="Screenshot 2025-10-20 at 7 35 08 PM" src="https://github.com/user-attachments/assets/9dd5a03b-b04b-440e-95a5-3ee3009d6ab5" />
+
+
      
 
   
