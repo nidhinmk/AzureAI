@@ -1,6 +1,6 @@
 ## Develop a text extraction app with the Azure AI Vision SDK
 
-This exercise will complete a partially implemented client application that uses the Azure AI Vision SDK to extract text from images.
+This exercise will complete a partially implemented client application that uses the Azure AI Vision SDK to extract text from images. [Code](/read-text.py)
 
 1. Prepare the application configuration
     Use the [>_] button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a PowerShell environment with no storage in your subscription
