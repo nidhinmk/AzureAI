@@ -16,4 +16,6 @@
 
    [Read Text in Images](/TextExtractionApp.md) - A client application that uses the Azure AI Vision SDK to extract text from images.
 
+   [Prompt Flow](/PromptFlow.md) - Creates a custom chat app that uses a user prompt and chat history as inputs,, and uses a GPT model from Azure OpenAI to generate an output.
+
 
