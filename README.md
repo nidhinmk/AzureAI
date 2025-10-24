@@ -8,6 +8,8 @@
 
    [Generative AI Chat App](/GenAIChatApp.md) - Creates an application that chats with a generative AI model.
 
+   [Prompt Flow](/PromptFlow.md) - Creates a custom chat app that uses a user prompt and chat history as inputs,, and uses a GPT model from Azure OpenAI to generate an output.
+
 ## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
@@ -16,6 +18,6 @@
 
    [Read Text in Images](/TextExtractionApp.md) - A client application that uses the Azure AI Vision SDK to extract text from images.
 
-   [Prompt Flow](/PromptFlow.md) - Creates a custom chat app that uses a user prompt and chat history as inputs,, and uses a GPT model from Azure OpenAI to generate an output.
+   
 
 
