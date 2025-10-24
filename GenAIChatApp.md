@@ -1,6 +1,6 @@
 ## Create a generative AI chat app
 
-In this exercise, we use the Azure AI Foundry Python SDK to create a simple chat app that connects to a project and chats with a language model.
+In this exercise, we use the Azure AI Foundry Python SDK to create a simple chat app that connects to a project and chats with a language model. [Code](/chat-app.py)
 
 # Deploy a model in an Azure AI Foundry project
 
