@@ -1,6 +1,6 @@
 **Develop an image analysis app with the Azure AI Vision SDK**
 
-This exercise ensures to complete a partially implemented client application that uses the Azure AI Vision SDK to analyze images.
+This exercise ensures to complete a partially implemented client application that uses the Azure AI Vision SDK to analyze images. [Code](/image-analysis.py)
 
 1. Use the [>_] button to the right of the search bar at the top of the page to create a new Cloud Shell. Use Poweshell
 
