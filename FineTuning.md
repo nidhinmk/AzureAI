@@ -161,6 +161,9 @@ The downloaded JSONL file will look like below
    
 5. After reviewing the responses, we can see that the fine-tuned model is behaving way more advanced compared to the base model
 
+       <img width="1351" height="840" alt="Screenshot 2025-10-26 at 1 02 13 PM" src="https://github.com/user-attachments/assets/a106c86c-d5a4-49fc-8079-21d58ddc6994" />
+
+
 ### Clean up the reources
   - Navigate to the Azure portal at `https://portal.azure.com`.
   - In the Azure portal, on the Home page, select Resource groups.
