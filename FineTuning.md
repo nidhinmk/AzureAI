@@ -159,7 +159,7 @@ The downloaded JSONL file will look like below
         
         What's the best way to get around the city?
    
-5. After reviewing the responses, we can see that the fine-tuned model is behaving way more advanced compared to the base model?
+5. After reviewing the responses, we can see that the fine-tuned model is behaving way more advanced compared to the base model
 
 ### Clean up the reources
   - Navigate to the Azure portal at `https://portal.azure.com`.
