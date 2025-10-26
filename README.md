@@ -12,6 +12,9 @@
 
    [RAG-based solution](/RAGmodel.md) - Creates an application that chats with a generative AI model.
 
+   [Fine tuning](/FineTuning.md) - Fine-tune a base model from the model catalog and integrate in a chat application.
+
+
 ## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
