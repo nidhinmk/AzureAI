@@ -14,6 +14,8 @@
 
    [Fine tuning](/FineTuning.md) - Fine-tune a base model from the model catalog and integrate in a chat application.
 
+   [Responsible Gen AI](/ResponsibleAI.md) - Implement a responsible generative AI solution in Azure AI Foundry.
+
 
 ## Computer Vision
 
