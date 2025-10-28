@@ -16,6 +16,8 @@
 
    [Responsible Gen AI](/ResponsibleAI.md) - Implement a responsible generative AI solution in Azure AI Foundry.
 
+   [Model Performance](/ModelPerformance.md) - Use manual and automated evaluations to assess the performance of a model
+
 
 ## Computer Vision
 
