@@ -23,8 +23,10 @@
    AI agents are smart software services that combine generative AI models with contextual data and the ability to automate tasks based on user input and environmental factors that they perceive.
 
    [Agent Development](/AgentDevelopment.md) - Create an AI agent that assists employees with expense claims.
-   
 
+   [Agents with Azure AI Foundry](/AgentService.md) - Securely build, deploy, and scale high-quality, extensible AI agents with Azure AI Foundry Agent Service.
+
+   
 ## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
