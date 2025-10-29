@@ -18,6 +18,12 @@
 
    [Model Performance](/ModelPerformance.md) - Use manual and automated evaluations to assess the performance of a model
 
+## AI Agents
+
+   AI agents are smart software services that combine generative AI models with contextual data and the ability to automate tasks based on user input and environmental factors that they perceive.
+
+   [Agent Development](/AgentDevelopment.md) - Create an AI agent that assists employees with expense claims.
+   
 
 ## Computer Vision
 
