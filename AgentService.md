@@ -7,7 +7,7 @@ These agents use advanced AI models to understand context, make decisions, utili
 ## Develop an AI Agent (Exercise)
 
 In this exercise, we’ll use Azure AI Agent Service to create a simple agent that analyzes data and creates charts. 
-The agent can use the built-in Code Interpreter tool to dynamically generate any code required to analyze data.
+The agent can use the built-in Code Interpreter tool to dynamically generate any code required to analyze data. [Code](/agent.py)
 
 ### Create an Azure AI Foundry project
 
