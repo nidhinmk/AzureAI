@@ -26,6 +26,8 @@
 
    [Agents with Azure AI Foundry](/AgentService.md) - Securely build, deploy, and scale high-quality, extensible AI agents with Azure AI Foundry Agent Service.
 
+   [AI with Visual Studio](/AIVisualStudio.md) - Develop an AI agent with VS Code extension
+
    
 ## Computer Vision
 
