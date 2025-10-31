@@ -222,6 +222,9 @@ The agent can use the built-in Code Interpreter tool to dynamically generate any
    
 7. Review the conversation messages that were retrieved from the thread - which may include messages the agent generated to explain its steps when using the code interpreter tool.
 
+   <img width="987" height="514" alt="Screenshot 2025-10-30 at 6 19 38 PM" src="https://github.com/user-attachments/assets/67ba7c08-8ccd-4b8b-8b96-c100bc0250d7" />
+
+
 ### Summary
 In this exercise, we used the Azure AI Agent Service SDK to create a client application that uses an AI agent. 
 The agent can use the built-in Code Interpreter tool to run dynamic Python code to perform statistical analyses.
