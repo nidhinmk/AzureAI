@@ -100,3 +100,122 @@ We'll develop an app that implements an agent using custom function tools.
      }
     ```
 
+4. Ctrl+S the file
+
+### Write code to implement an agent that can use the custom function
+
+1. Edit the agent code.
+
+     `code agent.py`
+2. Review the existing code, which retrieves the application configuration settings and sets up a loop in which the user can enter prompts for the agent. The rest of the file includes comments      where we’ll add the necessary code to implement the technical support agent.
+
+3. Add code to import the classes you’ll need to build an Azure AI agent that uses your function code as a tool:
+
+     ```
+     # Add references
+     from azure.identity import DefaultAzureCredential
+     from azure.ai.agents import AgentsClient
+     from azure.ai.agents.models import FunctionTool, ToolSet, ListSortOrder, MessageRole
+     from user_functions import user_functions
+     ```
+4. Connect to the Azure AI project using the current Azure credentials.
+
+     ```
+     # Connect to the Agent client
+     agent_client = AgentsClient(
+         endpoint=project_endpoint,
+         credential=DefaultAzureCredential
+             (exclude_environment_credential=True,
+              exclude_managed_identity_credential=True)
+     )
+     ```
+5. Add the function code to a toolset, and then create an agent that can use the toolset and a thread on which to run the chat session.
+
+     ```
+     # Define an agent that can use the custom functions
+     with agent_client:
+     
+          functions = FunctionTool(user_functions)
+          toolset = ToolSet()
+          toolset.add(functions)
+          agent_client.enable_auto_function_calls(toolset)
+                 
+          agent = agent_client.create_agent(
+              model=model_deployment,
+              name="support-agent",
+              instructions="""You are a technical support agent.
+                              When a user has a technical issue, you get their email address and a description of the issue.
+                              Then you use those values to submit a support ticket using the function available to you.
+                              If a file is saved, tell the user the file name.
+                           """,
+              toolset=toolset
+          )
+     
+          thread = agent_client.threads.create()
+          print(f"You're chatting with: {agent.name} ({agent.id})")
+
+     ```
+6. Add the user’s prompt as a message and run the thread.
+
+     ```
+     # Send a prompt to the agent
+     message = agent_client.messages.create(
+          thread_id=thread.id,
+          role="user",
+          content=user_prompt
+     )
+     run = agent_client.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)
+     ```
+7. Add the following code to show any errors that occur.
+
+     ```
+     # Check the run status for failures
+     if run.status == "failed":
+          print(f"Run failed: {run.last_error}")
+     ```
+8. Retrieve the messages from the completed thread and display the last one that was sent by the agent.
+
+     ```
+     # Show the latest response from the agent
+     last_msg = agent_client.messages.get_last_message_text_by_role(
+         thread_id=thread.id,
+         role=MessageRole.AGENT,
+     )
+     if last_msg:
+          print(f"Last Message: {last_msg.text.value}")
+     ```
+9. Print out the messages from the conversation thread; ordering them in chronological sequence
+
+     ```
+     # Get the conversation history
+     print("\nConversation Log:\n")
+     messages = agent_client.messages.list(thread_id=thread.id, order=ListSortOrder.ASCENDING)
+     for message in messages:
+          if message.text_messages:
+             last_msg = message.text_messages[-1]
+             print(f"{message.role}: {last_msg.text.value}\n")
+     ```
+10. Delete the agent and thread when no longer needed.
+
+    ```
+    # Clean up
+     agent_client.delete_agent(agent.id)
+     print("Deleted agent")
+    ```
+11. Review the code, using the comments to understand how it:
+     - Adds your set of custom functions to a toolset
+     - Creates an agent that uses the toolset.
+     - Runs a thread with a prompt message from the user.
+     - Checks the status of the run in case there’s a failure
+     - Retrieves the messages from the completed thread and displays the last one sent by the agent.
+     - Displays the conversation history
+     - Deletes the agent and thread when they’re no longer required.
+   
+12. Save the code file (CTRL+S) when you have finished. You can also close the code editor (CTRL+Q);
+
+### Sign into Azure and run the app
+
+1. Enter the following command to sign into Azure.
+
+     `az login`
+2. 
