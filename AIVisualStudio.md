@@ -15,7 +15,7 @@ The agent will be able to retrieve up-to-date information and interact with vari
 
 5. After installation is complete, verify the extension appears in the primary navigation bar on the left side of Visual Studio Code.
 
-   <img width="1512" height="947" alt="Screenshot 2025-10-31 at 11 39 32 AM" src="https://github.com/user-attachments/assets/8bba5702-037c-4e63-85ca-2af90c856573" />
+   <img width="1512" height="947" alt="Screenshot 2025-10-31 at 11 39 32 AM" src="https://github.com/user-attachments/assets/8c949c1d-3135-4adc-b2ec-a55b4ad4a464" />
 
 ## Sign in to Azure and create a project
 
