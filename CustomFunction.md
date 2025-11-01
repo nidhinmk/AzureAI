@@ -218,4 +218,26 @@ We'll develop an app that implements an agent using custom function tools.
 1. Enter the following command to sign into Azure.
 
      `az login`
-2. 
+2. After signing in, enter the following command to run the application:
+
+     `python agent.py`
+3. Enter a prompt such as:
+
+     `I have a technical problem`
+4. The agent may ask for your email address and a description of the issue. We can use any email address (for example, nidhin@azure.com) and any issue description (for example my computer           won't start)
+
+     <img width="1507" height="321" alt="Screenshot 2025-11-01 at 9 24 24 AM" src="https://github.com/user-attachments/assets/5e8ac209-e462-4788-9697-1bcdcdd080ba" />
+
+5. We can continue the conversation if you like. The thread is stateful, so it retains the conversation history - meaning that the agent has the full context for each response. Enter quit when      we’re done.
+
+     <img width="1511" height="611" alt="Screenshot 2025-11-01 at 9 25 30 AM" src="https://github.com/user-attachments/assets/aef2360e-4d97-422f-8622-378df40ea4ce" />
+
+6. The tool should have saved support tickets in the app folder. We can use the `ls` command to check, and then use the `cat` command to view the file contents, like this:
+
+    `cat ticket-<ticket_num>.txt`
+
+     <img width="983" height="201" alt="Screenshot 2025-11-01 at 9 26 25 AM" src="https://github.com/user-attachments/assets/bf0b1dca-bd02-43b8-b1a3-46bbc9cccb50" />
+
+### Clean up
+
+Open the Azure portal at https://portal.azure.com and view the contents of the resource group and delete the same. 
