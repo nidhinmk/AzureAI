@@ -1,7 +1,7 @@
 # Use a custom function in an AI agent
 
 In this exercise we’ll explore creating an agent that can use custom functions as a tool to complete tasks. 
-We’ll build a simple technical support agent that can collect details of a technical problem and generate a support ticket.
+We’ll build a simple technical support agent that can collect details of a technical problem and generate a support ticket. [Code](/custom_agent.py)
 
 ## Create an Azure AI Foundry project
 1. Open the Azure AI Foundry portal at https://ai.azure.com and sign in using your Azure credentials.
