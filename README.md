@@ -30,6 +30,7 @@
 
    [Custom Function](/CustomFunction.md) - Create an agent that can use custom functions as a tool to complete tasks.
 
+   [Multi Agent solution](/MultiAgent.md) - Design intelligent solutions where a primary agent delegates work to sub-agents without the need for custom orchestration logic or hardcoded routing. 
    
 ## Computer Vision
 
