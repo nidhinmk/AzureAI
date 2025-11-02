@@ -33,7 +33,7 @@
 
    [Multi Agent solution](/MultiAgent.md) - Design intelligent solutions where a primary agent delegates work to sub-agents without the need for custom orchestration logic or hardcoded routing. 
 
-   [MCP with Agents](/MCPWithAgents) - Create AI MCP tool solution with Azure AI Foundry Agent Service.
+   [MCP with Agents](/MCPWithAgents.md) - Create AI MCP tool solution with Azure AI Foundry Agent Service.
    
 ## Computer Vision
 
