@@ -1,6 +1,6 @@
 # Integrate MCP Tools with Azure Agents
 
-Dynamic tool discovery is a mechanism that allows an AI agent to discover available external tools without needing hardcoded knowledge of each one. Instead of manually adding or updating every tool the agent can use, the agent queries a centralized Model Context Protocol (MCP) server. 
+Dynamic tool discovery is a mechanism that allows an AI agent to discover available external tools without needing hardcoded knowledge of each one. Instead of manually adding or updating every tool the agent can use, the agent queries a centralized Model Context Protocol (MCP) server. [Code](/mcp_client.py)
 
 To dynamically connect tools to the Azure AI Agent, we first need a functioning Model Context Protocol (MCP) setup. This includes both the MCP server, which hosts your tool catalog, and the MCP client, which fetches those tools and makes them usable by the agent. The MCP server acts as a registry for tools the agent can use. A standard MCP client acts as a bridge between the MCP server and the Azure AI Agent Service. 
 
