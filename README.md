@@ -16,7 +16,9 @@
 
    [Responsible Gen AI](/ResponsibleAI.md) - Implement a responsible generative AI solution in Azure AI Foundry.
 
-   [Model Performance](/ModelPerformance.md) - Use manual and automated evaluations to assess the performance of a model
+   [Model Performance](/ModelPerformance.md) - Use manual and automated evaluations to assess the performance of a model.
+
+   [MCP with Agents](/MCPWithAgents) - Create AI MCP tool solution with Azure AI Foundry Agent Service.
 
 ## AI Agents
 
