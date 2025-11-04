@@ -6,7 +6,11 @@ In this exercise, we’ll use Azure AI Agent Service and Microsoft Agent Framewo
 
 1. Open the Azure AI Foundry portal at `https://ai.azure.com `and sign in using your Azure credentials.
 
+    <img width="976" height="748" alt="Screenshot 2025-11-04 at 9 55 50 AM" src="https://github.com/user-attachments/assets/39bc2305-5564-4c0c-ba3e-d24098db659b" />
+
 2. Select the `gpt-4o` model.
+
+    <img width="639" height="613" alt="Screenshot 2025-11-04 at 10 03 13 AM" src="https://github.com/user-attachments/assets/452c9ab7-19a3-4225-bbb4-44d5c206ac25" />
 
 3. Enter a valid name for your project and confirm the following settings.
 
@@ -43,6 +47,8 @@ In this exercise, we’ll use Azure AI Agent Service and Microsoft Agent Framewo
    
     `code .env`
    
+   <img width="1506" height="864" alt="Screenshot 2025-11-04 at 10 07 56 AM" src="https://github.com/user-attachments/assets/3b80a665-717d-4c9c-b081-371648822bab" />
+
 4. Replace the your_project_endpoint placeholder with the endpoint for the project (copied from the project Overview page in the Azure AI Foundry portal), and the your_model_deployment placeholder with the name we assigned to our gpt-4o model deployment.
 
 ### Write code for an agent app
