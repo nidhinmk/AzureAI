@@ -1,6 +1,6 @@
 # Develop an AI Agent with Microsoft Agent Framework
 
-In this exercise, we’ll use Azure AI Agent Service and Microsoft Agent Framework to create an AI agent that processes expense claims.
+In this exercise, we’ll use Azure AI Agent Service and Microsoft Agent Framework to create an AI agent that processes expense claims. [Code](/agent-framework.py)
 
 ## Deploy a model in an Azure AI Foundry project
 
@@ -118,7 +118,9 @@ In this exercise, we’ll use Azure AI Agent Service and Microsoft Agent Framewo
     `python agent-framework.py`
 3. When asked what to do with the expenses data, enter the following prompt:
     `Submit an expense claim`
-4. The agent should have composed an email for an expenses claim based on the data that was provided.
+4. The agent have composed an email for an expenses claim based on the data that was provided, as below.
+
+   <img width="1512" height="600" alt="Screenshot 2025-11-04 at 10 13 21 AM" src="https://github.com/user-attachments/assets/70bd14b0-4442-4a1d-9688-b0b9e9064030" />
 
 ### Summary
 In this exercise, we used the Microsoft Agent Framework SDK to create an agent with a custom tool.
