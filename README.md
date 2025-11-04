@@ -36,6 +36,8 @@
    [MCP with Agents](/MCPWithAgents.md) - Create AI MCP tool solution with Azure AI Foundry Agent Service.
 
    [Agent Framework](/AgentFramework.md) - Enables developers to securely build, deploy, and scale high-quality extensible AI agents.
+
+   [Multi Agent with Agent framework](/MultiAgentFramework.md) - A multi-agent solution allows agents to collaborate within the same conversation
    
 ## Computer Vision
 
