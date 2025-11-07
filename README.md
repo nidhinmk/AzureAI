@@ -38,6 +38,8 @@
    [Agent Framework](/AgentFramework.md) - Enables developers to securely build, deploy, and scale high-quality extensible AI agents.
 
    [Multi Agent with Agent framework](/MultiAgentFramework.md) - A multi-agent solution allows agents to collaborate within the same conversation
+
+   [Agent-to-Agent (A2A)](/Agent2Agent.md) - The Agent-to-Agent (A2A) protocol provides a standardized framework for agent discovery, communication, and coordinated task execution.
    
 ## Computer Vision
 
