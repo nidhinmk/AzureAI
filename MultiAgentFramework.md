@@ -1,6 +1,6 @@
 # Orchestrate a multi-agent solution using the Microsoft Agent Framework
 
-The Microsoft Agent Framework SDK's agent orchestration framework makes it possible to design, manage, and scale complex multi-agent workflows without having to manually handle the details of agent coordination. Instead of relying on a single agent to manage every aspect of a task, we can combine multiple specialized agents.
+The Microsoft Agent Framework SDK's agent orchestration framework makes it possible to design, manage, and scale complex multi-agent workflows without having to manually handle the details of agent coordination. Instead of relying on a single agent to manage every aspect of a task, we can combine multiple specialized agents. [code](/multi-agents.py)
 
 ## Supported orchestration patterns
 Microsoft Agent Framework provides several orchestration patterns directly in the SDK, each offering a different approach to coordinating agents. 
@@ -24,7 +24,11 @@ We’ll practice using the sequential orchestration pattern in the Microsoft Age
 
 1. Open the Azure AI Foundry portal at `https://ai.azure.com` and sign in using your Azure credentials.
 
+    <img width="642" height="681" alt="Screenshot 2025-11-06 at 5 14 45 PM" src="https://github.com/user-attachments/assets/a1db135c-a040-4109-a486-7c29f759c855" />
+
 2. Explore models and capabilities section, search and select the gpt-4o model.
+
+    <img width="749" height="879" alt="Screenshot 2025-11-06 at 5 16 38 PM" src="https://github.com/user-attachments/assets/13b50319-c8ad-4c6d-9678-3b93a5e508c3" />
 
 3. In the navigation pane on the left, select Models and endpoints and select the gpt-4o deployment.
 
@@ -49,6 +53,8 @@ We’ll practice using the sequential orchestration pattern in the Microsoft Age
     cd ai-agents/Labfiles/05-agent-orchestration/Python
     ls -a -l
     ```
+    
+   <img width="1921" height="920" alt="Screenshot 2025-11-06 at 5 21 10 PM" src="https://github.com/user-attachments/assets/584845eb-3eee-4987-8a2c-244ccdc3b640" />
 
 ### Configure the application settings
 
@@ -148,31 +154,36 @@ We’ll practice using the sequential orchestration pattern in the Microsoft Age
 
         python agents.py
     
-3. The output is as follows
+3. The output should be as follows
 
-      ------------------------------------------------------------
-       01 [user]
-       Customer feedback:
-           I use the dashboard every day to monitor metrics, and it works well overall.
-           But when I'm working late at night, the bright screen is really harsh on my eyes.
-           If you added a dark mode option, it would make the experience much more comfortable.
-      
-       ------------------------------------------------------------
-       02 [summarizer]
-       User requests a dark mode for better nighttime usability.
-       ------------------------------------------------------------
-       03 [classifier]
-       Feature request
-       ------------------------------------------------------------
-       04 [action]
-       Log as enhancement request for product backlog.
+        ------------------------------------------------------------
+         01 [user]
+         Customer feedback:
+             I use the dashboard every day to monitor metrics, and it works well overall.
+             But when I'm working late at night, the bright screen is really harsh on my eyes.
+             If you added a dark mode option, it would make the experience much more comfortable.
+        
+         ------------------------------------------------------------
+         02 [summarizer]
+         User requests a dark mode for better nighttime usability.
+         ------------------------------------------------------------
+         03 [classifier]
+         Feature request
+         ------------------------------------------------------------
+         04 [action]
+         Log as enhancement request for product backlog.
  
 4. Running the code using different feedback inputs, such as:
 
    ```I use the dashboard every day to monitor metrics, and it works well overall. But when I'm working late at night, the bright screen is really harsh on my eyes. If you added a dark mode option, it would make the experience much more comfortable.```
 
+    <img width="856" height="388" alt="Screenshot 2025-11-06 at 5 32 28 PM" src="https://github.com/user-attachments/assets/49eb66a6-bbba-4c6f-8a00-fa6f1a9544bf" />
+
 
    ```I reached out to your customer support yesterday because I couldn't access my account. The representative responded almost immediately, was polite and professional, and fixed the issue within minutes. Honestly, it was one of the best support experiences I've ever had.```
+
+   <img width="1134" height="380" alt="Screenshot 2025-11-06 at 5 35 11 PM" src="https://github.com/user-attachments/assets/d4edc9b0-a214-4555-92fa-286420d7c77e" />
+
 
 ### Summary
 
