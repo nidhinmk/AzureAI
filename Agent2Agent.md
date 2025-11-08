@@ -16,13 +16,18 @@ In this exercise, we’ll use Azure AI Agent Service with the A2A protocol to cr
 
 1. Open the Azure AI Foundry portal at `https://ai.azure.com` and sign in using the Azure credentials.
 
+   <img width="642" height="682" alt="Screenshot 2025-11-07 at 5 34 58 PM" src="https://github.com/user-attachments/assets/4d28711a-5094-4929-8725-1866bb1683dc" />
+
 2. Deploy a gpt-4o model using either the Global Standard or Standard deployment option.
+
+   <img width="642" height="616" alt="Screenshot 2025-11-07 at 5 39 44 PM" src="https://github.com/user-attachments/assets/4ea396b9-0fb4-40af-8129-ed7e00d11bc1" />
 
 3. Copy the Azure AI Foundry project endpoint values to a notepad, as we’ll use them to connect to your project in a client application.
 
 ### Create an A2A application
 
 #### Clone the repo containing the application code
+
 1. Browse to the Azure portal at `https://portal.azure.com` signing in with the Azure credentials.
 
 2. Use the [>_] button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a PowerShell environment. in the Settings menu, select Go to Classic version.
@@ -53,6 +58,8 @@ In this exercise, we’ll use Azure AI Agent Service with the A2A protocol to cr
          │   └── server.py
          ├── client.py
          └── run_all.py
+
+   <img width="850" height="436" alt="Screenshot 2025-11-07 at 5 43 37 PM" src="https://github.com/user-attachments/assets/77192d0a-0fd2-4570-8ff8-aea94747599d" />
 
 #### Configure the application settings
 
@@ -290,7 +297,12 @@ In this task, we use the A2A protocol to enable the routing agent to send messag
 
         Create a title and outline for an article about React programming.
 
-5. We should see a response from the agent with the results.
+        Create a title for Azure Agentic AI
+   
+6. We should see a response from the agent with the results.
+
+   <img width="1420" height="883" alt="Screenshot 2025-11-07 at 6 48 53 PM" src="https://github.com/user-attachments/assets/348c6b1e-369d-4ac8-884f-5e051ab35c97" />
+
 
 #### Summary
 In this exercise, we used the Azure AI Agent Service SDK and the A2A Python SDK to create a remote multi-agent solution. We created a discoverable A2A-compatible agent and set up a routing agent to access the agent’s skills. We also implemented an agent executor to process incoming A2A messages and manage tasks.
