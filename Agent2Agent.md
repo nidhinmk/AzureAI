@@ -12,6 +12,14 @@ An Agent Executor defines how the agent processes incoming requests, generates r
 
 In this exercise, we’ll use Azure AI Agent Service with the A2A protocol to create simple remote agents that interact with one another. These agents will assist technical writers with preparing their developer blog posts. A title agent will generate a headline, and an outline agent will use the title to develop a concise outline for the article. 
 
+[a2a_agent.py](/a2a_agent.py)
+
+[a2a_agent_executor.py](/a2a_agent_executor.py)
+
+[a2a_routing_agent.py](a2a_routing_agent.py)
+
+[a2a_server.py](/a2a_server.py)
+
 ### Create an Azure AI Foundry project
 
 1. Open the Azure AI Foundry portal at `https://ai.azure.com` and sign in using the Azure credentials.
