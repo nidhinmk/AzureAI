@@ -1,5 +1,20 @@
 # AzureAI
 
+## Introduction
+
+AzureAI is an experimental project that explores the design and development of Generative AI Applications and AI Agents using the Microsoft Azure ecosystem.
+The repository integrates Azure Computer Vision, Azure OpenAI Service, and Agentic Frameworks to demonstrate how modern AI systems can see, reason, and act autonomously.
+
+This project serves as a learning and prototyping platform for developers and AI enthusiasts interested in:
+	
+   [Generative AI Apps](#generative-ai-apps) — Building intelligent applications that generate text, images, or insights dynamically.
+	
+   [AI Agents](#ai-agents) — Creating autonomous, goal-driven agents that interpret data, plan, and execute tasks collaboratively.
+	
+   [Computer Vision](#computer-vision) — Using Azure AI Vision to extract meaningful context from images and visual data.
+
+The goal is to bridge Azure’s cloud AI services with multi-agent architectures to accelerate the creation of next-generation, context-aware applications.
+
 ## Generative AI Apps
 
    The Azure AI Foundry model catalog serves as a central repository where one can explore and use a variety of models, facilitating the creation of your generative AI scenario.
