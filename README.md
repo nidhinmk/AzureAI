@@ -13,6 +13,8 @@ This project serves as a learning and prototyping platform for developers and AI
 	
    [Computer Vision](#computer-vision) — Using Azure AI Vision to extract meaningful context from images and visual data.
 
+   [Natural Language](#natural-language) - Develop natural language solutions in Azure. 
+
 The goal is to bridge Azure’s cloud AI services with multi-agent architectures to accelerate the creation of next-generation, context-aware applications.
 
 ## Generative AI Apps
@@ -56,6 +58,12 @@ The goal is to bridge Azure’s cloud AI services with multi-agent architectures
 
    [Agent-to-Agent (A2A)](/Agent2Agent.md) - The Agent-to-Agent (A2A) protocol provides a standardized framework for agent discovery, communication, and coordinated task execution.
    
+## Natural Language
+	
+   Natural language solutions use language models to interpret the semantic meaning of written or spoken language, and respond based on that meaning.
+
+   [Analyze Text](/AnalyzeText.md) - AI techniques enable us to create applications that extract meaning and insights from this text-based data.
+
 ## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
