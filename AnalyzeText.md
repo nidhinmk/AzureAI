@@ -168,3 +168,5 @@ Delete the resources you created in this exercise
 1. Close the Azure cloud shell pane
 
 2. In the Azure portal, select Delete and follow the instructions to delete the resource.
+
+  <img width="1919" height="964" alt="Screenshot 2025-11-12 at 7 33 04 PM" src="https://github.com/user-attachments/assets/b0fecd09-68e0-41ca-9d66-1d493136f56f" />
