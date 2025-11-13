@@ -1,6 +1,6 @@
-# Analyze text with Azure AI Language
+# Analyze text with Azure AI Language
 
-Azure AI Language supports analysis of text, including language detection, sentiment analysis, key phrase extraction, and entity recognition. In this exercise, we'll use the Azure AI Language Python SDK for text analytics to implement a simple hotel review application based on this example. [code](/text-analysis.py)
+Azure AI Language supports analysis of text, including language detection, sentiment analysis, key phrase extraction, and entity recognition. In this exercise, we'll use the Azure AI Language Python SDK for text analytics to implement a simple hotel review application based on this example. [Code](/text-analysis.py)
 
 ## Provision an Azure AI Language resource
 
