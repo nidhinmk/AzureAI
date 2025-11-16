@@ -64,6 +64,8 @@ The goal is to bridge Azure’s cloud AI services with multi-agent architectures
 
    [Analyze Text](/AnalyzeText.md) - AI techniques enable us to create applications that extract meaning and insights from this text-based data.
 
+   [Question Answering](/QuestionAnswer.md) - Users ask questions using natural language, and receive appropriate answers.
+
 ## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
