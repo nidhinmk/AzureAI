@@ -66,7 +66,7 @@ The goal is to bridge Azure’s cloud AI services with multi-agent architectures
 
    [Question Answering](/QuestionAnswer.md) - Users ask questions using natural language, and receive appropriate answers.
 
-   [Conversational Language Model](/ConversationalLM) - Trains a model that apps can use to extract meaning from natural language. 
+   [Conversational Language Model](/ConversationalLM.md) - Trains a model that apps can use to extract meaning from natural language. 
 
 ## Computer Vision
 
