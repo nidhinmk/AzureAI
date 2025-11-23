@@ -66,6 +66,8 @@ The goal is to bridge Azure’s cloud AI services with multi-agent architectures
 
    [Question Answering](/QuestionAnswer.md) - Users ask questions using natural language, and receive appropriate answers.
 
+   [Conversational Language Model](/ConversationalLM) - Trains a model that apps can use to extract meaning from natural language. 
+
 ## Computer Vision
 
    Computer Vision is a branch of Artificial Intelligence (AI) focused on enabling machines to interpret and understand visual information from the world around them. Azure AI offers a suite of     powerful services that support a wide range of computer vision scenarios — from image analysis to text extraction.
@@ -74,6 +76,5 @@ The goal is to bridge Azure’s cloud AI services with multi-agent architectures
 
    [Read Text in Images](/TextExtractionApp.md) - A client application that uses the Azure AI Vision SDK to extract text from images.
 
-   
-
+	
 
