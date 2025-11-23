@@ -1,6 +1,6 @@
 # Build a Conversational language understanding model
 
-In this module, we'll learn how to use the service to create a natural language understanding app using Azure Language. [Code](/clock-client.py)
+In this module, we'll learn how to use the Azure service to create a natural language understanding app using Azure Language. [Code](/clock-client.py)
 
 ## Exercise - Create a language understanding model with the Language service
 
